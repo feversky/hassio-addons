@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "slug": "aliddns",
   "description": "",
-  "url": "https://github.com/feversky/hassio-addons-repository",
+  "url": "https://github.com/feversky/hassio-addons",
   "startup": "application",
   "arch": [
     "armhf"
