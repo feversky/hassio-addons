@@ -1,0 +1,34 @@
+{
+  "name": "aliddns",
+  "version": "1.0.0",
+  "slug": "aliddns",
+  "description": "",
+  "url": "https://github.com/feversky/hassio-addons-repository",
+  "startup": "application",
+  "arch": [
+    "armhf"
+  ],
+  "boot": "auto",
+  "hassio_api": false,
+  "homeassistant_api": false,
+  "host_network": true,
+  "map": [
+    "config:rw"
+  ],
+  "options": {
+    "accesskey_id": "",
+    "accesskey_secret": "",
+    "domain": "",
+    "redo": 600
+  },
+  "schema": {
+    "accesskey_id": "str",
+    "accesskey_secret": "str",
+    "domain": "str",
+    "redo": "int"
+  },
+  "environment": {
+    "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
+  },
+  "image": "feversky/{arch}-addon-aliddns"
+}
