@@ -18,13 +18,13 @@
   "options": {
     "accesskey_id": "",
     "accesskey_secret": "",
-    "domain": "",
+    "domain": [],
     "redo": 600
   },
   "schema": {
     "accesskey_id": "str",
     "accesskey_secret": "str",
-    "domain": "str",
+    "domain": ["str"],
     "redo": "int"
   },
   "environment": {
