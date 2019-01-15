@@ -6,7 +6,8 @@
   "url": "https://github.com/feversky/hassio-addons",
   "startup": "application",
   "arch": [
-    "armhf"
+    "armhf",
+    "amd64"
   ],
   "boot": "auto",
   "hassio_api": false,
