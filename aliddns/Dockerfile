@@ -21,7 +21,7 @@ RUN if [ "$BUILD_ARCH" = "armhf" ]; \
 
 # Copy data
 COPY run.sh /
-COPY /aliyun-ddns-cli /usr/bin/aliyun-ddns-cli
+COPY ./aliyun-ddns-cli /usr/bin/aliyun-ddns-cli
 
 RUN chmod a+x /run.sh
 
