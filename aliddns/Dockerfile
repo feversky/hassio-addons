@@ -15,13 +15,14 @@ RUN if [ "$BUILD_ARCH" = "armhf" ]; \
     elif [ "$BUILD_ARCH" = "amd64" ]; \
     then curl -L -O https://github.com/chenhw2/aliyun-ddns-cli/releases/download/v20180622/aliddns_linux-amd64-47BBA02DE2.2018-06-22.tar.gz \
   && tar zxvpf aliddns_linux-amd64-47BBA02DE2.2018-06-22.tar.gz && rm aliddns_linux-amd64-47BBA02DE2.2018-06-22.tar.gz && mv aliddns_linux_amd64 aliyun-ddns-cli;\
+    else return 0;\
     fi 
 
 
 # Copy data
 COPY run.sh /
+COPY /aliyun-ddns-cli /usr/bin/aliyun-ddns-cli
 
-RUN chmod a+x /aliyun-ddns-cli
 RUN chmod a+x /run.sh
 
 CMD [ "/run.sh" ]
